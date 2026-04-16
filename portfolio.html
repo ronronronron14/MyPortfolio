@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ronel Anzuelo — Graphics Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#work" onclick="closeMobileMenu()">Work</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="#hero" class="nav-logo">RA.</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+  <button class="nav-burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-marquee-bg">DESIGN&nbsp;STUDIO&nbsp;&nbsp;DESIGN&nbsp;STUDIO&nbsp;&nbsp;DESIGN&nbsp;STUDIO&nbsp;&nbsp;</div>
+
+  <h1 class="hero-title">
+    Crafting<br>
+    <em>Visual</em><br>
+    Identities
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-desc">
+      I design thoughtful brand systems, editorial layouts, and motion graphics that transform ideas into lasting impressions.
+    </p>
+    <a href="#work" class="hero-scroll">
+      <div class="scroll-line"></div>
+      See Work
+    </a>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="section-label reveal">What I Do</div>
+  <h2 class="section-title reveal">Services &amp; <em>Expertise</em></h2>
+  <div class="services-grid reveal">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-name">Brand Identity</div>
+      <p class="service-desc">Logo design, typography systems, color palettes, and complete brand guidelines that define who you are.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-name">Print &amp; Editorial</div>
+      <p class="service-desc">Magazines, books, packaging, and posters with deliberate typographic hierarchy and spatial rhythm.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-name">UI/UX & Digital</div>
+      <p class="service-desc">Web interfaces, app screens, and digital experiences that merge aesthetics with usability.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Work -->
+<section id="work">
+  <div class="section-label reveal">Portfolio</div>
+  <h2 class="section-title reveal">Selected <em>Work</em></h2>
+  <div class="work-filter">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Branding</button>
+    <button class="filter-btn">Digital</button>
+    <button class="filter-btn">Ads</button>
+  </div>
+    <div class="work-grid">
+    <a class="work-item" href="project-JaCreate.html" target="_blank" data-category="branding">
+      <div class="work-img">
+        <img src="Ja_Create.png" alt="Ja Create Brand Identity" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Branding</div>
+          <div class="work-overlay-title">Ja Create</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Ja Create Identity</div>
+        <div class="work-cat">Brand System · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="TrackMate.html" target="_blank" data-category="digital">
+      <div class="work-img">
+        <img src="TrackMate Thumbnail.png" alt="TrackMate" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Digital</div>
+          <div class="work-overlay-title">TrackMate</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">TrackMate</div>
+        <div class="work-cat">UI/UX Design · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Treatory.html" target="_blank" data-category="branding">
+      <div class="work-img">
+        <img src="Treatory.png" alt="Treatory Packaging" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Branding</div>
+          <div class="work-overlay-title">Treatory</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Treatory Identity</div>
+        <div class="work-cat">Packaging · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Maison.html" target="_blank" data-category="digital">
+      <div class="work-img">
+        <img src="ui.png" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Digital</div>
+          <div class="work-overlay-title">Maison App Interface</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Maison App Interface</div>
+        <div class="work-cat">UI/UX Design · 2023</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Subscra.html" target="_blank" data-category="digital">
+      <div class="work-img">
+        <img src="subscra-thumbnail.png" alt="Subscra" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">UI/UX</div>
+          <div class="work-overlay-title">Subscra</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Subscra</div>
+        <div class="work-cat">UI/UX Design · 2024</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Medcore.html" target="_blank" data-category="digital">
+      <div class="work-img">
+        <img src="medcore-thumbnail.png" alt="Medcore" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">UI/UX</div>
+          <div class="work-overlay-title">Medcore</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Medcore</div>
+        <div class="work-cat">UI/UX Design · 2023</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Jollibee.html" target="_blank" data-category="digital">
+      <div class="work-img">
+        <img src="Jollibee-thumbnail.png" alt="Jollibee" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">UI/UX</div>
+          <div class="work-overlay-title">Jollibee</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Jollibee</div>
+        <div class="work-cat">UI/UX Design · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Facio.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 1.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Facio Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Facio Ad</div>
+        <div class="work-cat">Ads · 2024</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Hibiscus.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 2.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Hibiscus Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Hibiscus Ad</div>
+        <div class="work-cat">Ads · 2024</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Serene.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 3.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Serene Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Serene Ad</div>
+        <div class="work-cat">Ads · 2024</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Soto Grande.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 4.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Soto Grande Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Soto Grande Ad</div>
+        <div class="work-cat">Ads · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Soto Grande 2.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 5.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Soto Grande Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Soto Grande Ad</div>
+        <div class="work-cat">Ads · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-Soto Grande 3.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 6.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">Soto Grande Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">Soto Grande Ad</div>
+        <div class="work-cat">Ads · 2025</div>
+      </div>
+    </a>
+    <a class="work-item" href="project-BakeryMoto.html" target="_blank" data-category="ads">
+      <div class="work-img">
+        <img src="ads 7.jpg" alt="Maison" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;">
+        <div class="work-overlay">
+          <div class="work-overlay-tag">Ads</div>
+          <div class="work-overlay-title">BakeryMoto Ad</div>
+        </div>
+      </div>
+      <div class="work-info">
+        <div class="work-title">BakeryMoto Ad</div>
+        <div class="work-cat">Ads · 2025</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="about-inner">
+    <div class="about-photo reveal">
+      <div class="about-photo-frame" style="padding:0;overflow:hidden;">
+        <img src="Profile.jpeg" alt="Ronel Anzuelo" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+      </div>
+      <div class="about-photo-deco"></div>
+      <div class="about-photo-deco2"></div>
+    </div>
+    <div class="about-body">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal" style="margin-bottom:1.5rem;font-family:var(--font-display);font-style:normal;">RONEL <em style="font-family:var(--font-serif);font-style:italic;">Anzuelo</em></h2>
+      <p class="about-desc reveal">
+        I'm a <strong>UI/UX designer, graphic designer, social media ads specialist, and vibe coder with 2 years of experience</strong> crafting brand identities, editorial publications, and digital experiences. My work lives at the intersection of concept and craft every pixel placed with intention. 
+        <br><br>
+        What sets me apart is my ability to design and ship. I use AI tools like Claude to bring my designs to life through vibe coding, delivering fully functional, coded landing pages without relying on a developer. From the first wireframe to the final deployed page, I own the entire process.
+        <br><br>
+        I partner with clients to build visual languages that endure. <strong>Precision, restraint, and originality</strong> are the principles I design by.
+      </p>
+
+      <div class="skills-list reveal">
+        <span class="skill-tag">UI/UX Design</span>
+        <span class="skill-tag">Graphics Design</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">Branding</span>
+        <span class="skill-tag">Vibe Coding</span>
+        <span class="skill-tag">Social Media Ads</span>
+        <span class="skill-tag">AI Tools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="section-label reveal">Kind Words</div>
+  <h2 class="section-title reveal">Client <em>Testimonials</em></h2>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">RA brought an entirely new visual dimension to our brand. The identity system she created has become our strongest asset in the market.</p>
+      <div class="testi-author">Sarah Chen</div>
+      <div class="testi-role">CEO, Arkh Studio</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Working with RA is like having a creative director on call. She understood our vision immediately and elevated it beyond what we imagined.</p>
+      <div class="testi-author">Marcus Reeves</div>
+      <div class="testi-role">Founder, Lune Fragrance</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Exceptional eye for detail, incredible communication, and delivers on time. The Form magazine redesign increased our readership by 40%.</p>
+      <div class="testi-author">Isabelle Fontaine</div>
+      <div class="testi-role">Editor-in-Chief, Form</div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label reveal">Let's Talk</div>
+      <div class="contact-big reveal">
+        Start a<br><em>Project</em><br>Together
+      </div>
+      <p class="contact-meta reveal">Available for freelance work and collaborations. Response within 24 hours.</p>
+      <div class="contact-links reveal">
+        <a href="/cdn-cgi/l/email-protection#ccbeada2b6b9a9a0a3fefd8caba1ada5a0e2afa3a1" class="contact-link">
+          <div class="contact-link-icon">@</div>
+          <span class="__cf_email__" data-cfemail="8efcefe0f4fbebe2e1bcbfcee9e3efe7e2a0ede1e3">[email&#160;protected]</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ronel-anzuelo" target="_blank" class="contact-link">
+          <div class="contact-link-icon">in</div>
+          Ronel Anzuelo | LinkedIn
+        </a>
+        <a href="#" class="contact-link">
+          <div class="contact-link-icon">be</div>
+          behance.net/RA
+        </a>
+        <a href="#" class="contact-link">
+          <div class="contact-link-icon">ig</div>
+          @RA
+        </a>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <div id="form-success" style="display:none; padding:2rem; border:1px solid #a89f8c; margin-bottom:1.5rem;">
+        <p style="font-size:0.9rem; color:#a89f8c; letter-spacing:0.05em;">✓ &nbsp; Message sent! I'll get back to you within 24 hours.</p>
+      </div>
+      <div id="form-error" style="display:none; padding:2rem; border:1px solid #8a3a3a; margin-bottom:1.5rem;">
+        <p style="font-size:0.9rem; color:#c47a7a; letter-spacing:0.05em;">✕ &nbsp; Something went wrong. Please try again or email me directly.</p>
+      </div>
+      <form id="contact-form" action="https://formspree.io/f/mpqyedvl" method="POST" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Jane Smith" required>
+          <span class="form-error-msg" style="display:none;font-size:0.72rem;color:#c47a7a;margin-top:0.3rem;">Please enter your name.</span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="jane@company.com" required>
+          <span class="form-error-msg" style="display:none;font-size:0.72rem;color:#c47a7a;margin-top:0.3rem;">Please enter a valid email.</span>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="project">Project Type</label>
+          <input type="text" id="project" name="project" class="form-input" placeholder="Brand Identity, Editorial, UI...">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+          <span class="form-error-msg" style="display:none;font-size:0.72rem;color:#c47a7a;margin-top:0.3rem;">Please enter a message.</span>
+        </div>
+        <button type="submit" class="form-submit" id="submit-btn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">RA.</div>
+  <div class="footer-copy">© 2025 Ronel Anzuelo. All rights reserved.</div>
+  <div class="footer-socials">
+    <a href="#" class="footer-social">Instagram</a>
+    <a href="#" class="footer-social">Behance</a>
+    <a href="#" class="footer-social">LinkedIn</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
